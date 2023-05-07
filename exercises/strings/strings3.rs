@@ -5,12 +5,14 @@
 
 fn trim_me(input: &str) -> String {
     // TODO: Remove whitespace from both ends of a string!
-    ???
+    let trimmed = String::from(input).trim_matches(" ");
+    trimmed.to_string()
 }
 
 fn compose_me(input: &str) -> String {
     // TODO: Add " world!" to the string! There's multiple ways to do this!
-    ???
+    let mut composed = String::from(input).push_str("  world!");
+    composed.to_string()
 }
 
 fn replace_me(input: &str) -> String {
